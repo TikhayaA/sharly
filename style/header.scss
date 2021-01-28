@@ -1,0 +1,134 @@
+.header{
+    background: #E3AE3B;
+    border-radius: 0 0 26px 26px;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 13px 0;
+    z-index: 2;
+    -webkit-border-radius: 0 0 26px 26px;
+    -moz-border-radius: 0 0 26px 26px;
+    -ms-border-radius: 0 0 26px 26px;
+    -o-border-radius: 0 0 26px 26px;
+    >div{
+        justify-content: space-between;
+    }
+    &_logo{
+        img{
+            width: 50px;
+        }
+    }
+    nav{
+        align-self: center;
+        width: 46%;
+        >ul{
+            justify-content: space-between;
+            align-items: center;
+            >li{
+                height: 80px;
+                >a{
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 47px;
+                    display: flex;
+                    align-items: center;
+                    color: rgba(255, 255, 255, 0.85);
+                    font-family: 'Montserrat',sans-serif;
+                }
+                .active{
+                    position: relative;
+                    color: #FFFFFF;
+    
+                    &::after{
+                        position: absolute;
+                        content: " ";
+                        width: 14px;
+                        height: 4px;
+                        left: 50%;
+                        top: 40px;
+                        border-radius: 50px;
+                        transform: translate(-50%, 0);
+                        background: #F0BE50;
+                    }
+                }
+                &.hover-select{
+                    position: relative;
+                    height: 80px;
+                    
+                    &::after{
+                        position: absolute;
+                        content: url(img/arrows.svg);
+                        top: 16px;
+                        right: -20px;
+                        transition: all 0.5s;
+                        -webkit-transition: all 0.5s;
+                        -moz-transition: all 0.5s;
+                        -ms-transition: all 0.5s;
+                        -o-transition: all 0.5s;
+}
+                    &:hover{
+                        &::after{
+                            transform: rotate(-180deg);
+                            -webkit-transform: rotate(-180deg);
+                            -moz-transform: rotate(-180deg);
+                            -ms-transform: rotate(-180deg);
+                            -o-transform: rotate(-180deg);
+}
+                        .wrap-sub-menu{
+                            display: block;
+                        }
+                    }    
+                }
+                .wrap-sub-menu{
+                    padding-top: 42px;
+                    display: none;
+                }
+                .sub-menu{
+                    position: absolute;
+                    background: rgba(196, 196, 196, 0.6);
+                    border-radius: 15px;
+                    padding: 21px 0 2px 27px;
+                    left: -15px;
+                    width: 293px;
+                    box-sizing: border-box;
+                    
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        border-left: 7px solid transparent;
+                        border-right: 7px solid transparent;
+                        border-bottom: 7px solid rgba(196, 196, 196, 0.6);
+                        right: 205px;
+                        top: -7px;
+                    }
+                    li{
+                        margin-bottom: 20px;
+                        >a{
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 20px;
+                            text-decoration: none;
+                            color: #FFFFFF;
+                            font-family: 'Montserrat-regular', sans-serif;
+                            &:hover{
+                                font-family: 'Montserrat-Medium',sans-serif;
+                                font-style: normal;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    &_chekbox{
+        align-self: center;
+
+    }
+
+}

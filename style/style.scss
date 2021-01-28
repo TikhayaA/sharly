@@ -1,0 +1,32 @@
+@import"header.scss";
+@import"header-chekbox.scss";
+@import"wrap-video.scss";
+@import"footer.scss";
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat-SemiBold.ttf');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat-Medium';
+	src: url('fonts/Montserrat-Medium.ttf');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat-regular';
+	src: url('fonts/Montserrat-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
